@@ -392,16 +392,7 @@ void Updater()
         ExitProcess(EXIT_SUCCESS);
     }
 }
-/*
-Andrei_Mandrov
-Andrei_Manrdrov
-Andrei_Maslov
-Konstantine_Maslov
-Ashot_Ponosenkov
-Vasiliy_Ponosenkov
-Alex_Ponosenkov
 
-*/
 int main(int, char**)
 {
     RECT desktop;
@@ -409,10 +400,9 @@ int main(int, char**)
     GetWindowRect(hDesktop, &desktop);
 
     std::string randomclassname = " ";
-    glfwSetErrorCallback(glfw_error_callback); // можно удалить
+    glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit()) return 1;
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-    //glfwWindowHint(GLFW_DECORATED, GLFW_FALSE); //Убрать рамку онка, удалить
     GLFWwindow* window = glfwCreateWindow(WindowWidth, WindowHeight, randomclassname.c_str(), NULL, NULL);
     if (!window) return 1;
     glfwMakeContextCurrent(window);
